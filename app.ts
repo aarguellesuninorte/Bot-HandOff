@@ -10,7 +10,7 @@ import { commandsMiddleware } from './commands';
 const app = express();
 
 // Setup Express Server
-app.listen(process.env.port || process.env.PORT || 3978, '::', () => {
+app.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log('Server Up');
 });
 // Create chat bot
